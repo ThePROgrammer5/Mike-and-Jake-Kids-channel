@@ -1,4 +1,4 @@
-filterSelection("filterDiv");
+document.getElementById('all').click();
 
 function filterSelection(c) {
   var x, i;
