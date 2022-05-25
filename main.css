@@ -14,11 +14,15 @@
     border-radius: 50%;
 }
 
+.filterDiv:hover {
+    background-color: #828282;
+}
+
 .filterDiv {
     float: left;
-    background-color: #2196F3;
+    background-color: #b8b8b8;
     color: #ffffff;
-    width: 200px;
+    width: 300px;
     line-height: 100px;
     text-align: center;
     margin: 2px;
