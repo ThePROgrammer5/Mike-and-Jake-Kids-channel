@@ -19,6 +19,7 @@
     text-align: center;
     margin: 2px;
     display: none;
+    cursor: pointer;
   }
   
   .show {
