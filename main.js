@@ -1,4 +1,4 @@
-filterSelection("all")
+filterSelection("all");
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -8,7 +8,7 @@ function filterSelection(c) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
-}
+};
 
 // Show filtered elements
 function w3AddClass(element, name) {
@@ -20,7 +20,7 @@ function w3AddClass(element, name) {
       element.className += " " + arr2[i];
     }
   }
-}
+};
 
 // Hide elements that are not selected
 function w3RemoveClass(element, name) {
@@ -33,7 +33,7 @@ function w3RemoveClass(element, name) {
     }
   }
   element.className = arr1.join(" ");
-}
+};
 
 // Add active class to the current control button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
@@ -44,4 +44,4 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}
+};
