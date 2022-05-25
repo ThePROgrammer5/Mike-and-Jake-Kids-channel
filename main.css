@@ -13,24 +13,24 @@
     border-radius: 50%;
 }
 
-.container {
-    overflow: hidden;
-  }
-  
-  .filterDiv {
+.filterDiv {
     float: left;
     background-color: #2196F3;
     color: #ffffff;
-    width: 200px;
+    width: 100px;
     line-height: 100px;
     text-align: center;
     margin: 2px;
-    display: none; /* Hidden by default */
+    display: none;
   }
   
-  /* The "show" class is added to the filtered elements */
   .show {
     display: block;
+  }
+  
+  .container {
+    margin-top: 20px;
+    overflow: hidden;
   }
   
   /* Style the buttons */
@@ -42,14 +42,11 @@
     cursor: pointer;
   }
   
-  /* Add a light grey background on mouse-over */
   .btn:hover {
     background-color: #ddd;
   }
   
-  /* Add a dark background to the active button */
   .btn.active {
     background-color: #666;
     color: white;
   }
-  
