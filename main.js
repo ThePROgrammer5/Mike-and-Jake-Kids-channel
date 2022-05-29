@@ -2,9 +2,9 @@ function notifyMe() {
   if (Notification.permission !== 'granted')
    Notification.requestPermission();
   else {
-   var notification = new Notification('Hello!👋', {
+   var notification = new Notification('Notification title', {
     icon: 'img/favicon.png',
-    body: 'Hello!👋',
+    body: 'Hello! ',
    });
    notification.onclick = function() {
     window.open('https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured');
