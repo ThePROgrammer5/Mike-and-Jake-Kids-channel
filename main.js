@@ -40,3 +40,24 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+function showNotification() {
+  const notification = new Notification("TEST", {
+  body: "Hello! welcom to Coding+Gaming this is a test to make our website better",
+});
+}  
+
+//default, garanted, denied
+console.log(Notification.permission);
+
+if(Notification.permission === "granted") {
+showNotification();
+} 
+
+else if (Notification.permission === "denied") {
+Notification.requestPermission().then(permission => {
+    if(permission === "granted") {
+      showNotification();
+    }
+})
+}
