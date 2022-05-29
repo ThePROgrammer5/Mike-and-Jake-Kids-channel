@@ -3,7 +3,7 @@ function notifyMe() {
    Notification.requestPermission();
   else {
    var notification = new Notification('Notification title', {
-    icon: 'img/favicon.png',
+    icon: 'img/favicon.jpg',
     body: 'Hello! ',
    });
    notification.onclick = function() {
