@@ -4,7 +4,8 @@ function notifyMe() {
   else {
    var notification = new Notification('Notification title', {
     icon: 'img/favicon.jpg',
-    body: 'Hello! ',
+    body: 'Hello!👋 Did you know we have a youtube channel? check it out by clicking this notification!',
+    image: hi.png,
    });
    notification.onclick = function() {
     window.open('https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured');
