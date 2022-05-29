@@ -1,3 +1,9 @@
+function showNotification() {
+  const notification = new Notification("TEST", {
+  body: "Hello! welcome to Coding+Gaming this is a test to make our website better",
+});
+}  
+
 //default, garanted, denied
 console.log(Notification.permission);
 
@@ -56,8 +62,3 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-function showNotification() {
-  const notification = new Notification("TEST", {
-  body: "Hello! welcom to Coding+Gaming this is a test to make our website better",
-});
-}  
