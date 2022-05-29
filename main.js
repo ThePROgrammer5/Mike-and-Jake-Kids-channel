@@ -2,12 +2,12 @@ function notifyMe() {
   if (Notification.permission !== 'granted')
    Notification.requestPermission();
   else {
-   var notification = new Notification('Notification title', {
-    icon: 'http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png',
-    body: 'Hey there! You\'ve been notified!',
+   var notification = new Notification('Hello!👋', {
+    icon: 'img/favicon.png',
+    body: 'Hello!👋' + Image('https://sdk.bitmoji.com/render/panel/20082977-100015390365_13-s5-v1.png?transparent=1&palette=1&scale=2'),
    });
    notification.onclick = function() {
-    window.open('http://stackoverflow.com/a/13328397/1269037');
+    window.open('https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured');
    };
   }
  }
