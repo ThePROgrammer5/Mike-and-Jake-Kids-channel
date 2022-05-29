@@ -4,7 +4,7 @@ function notifyMe() {
   else {
    var notification = new Notification('Hello!👋', {
     icon: 'img/favicon.png',
-    body: 'Hello!👋' + Image('https://sdk.bitmoji.com/render/panel/20082977-100015390365_13-s5-v1.png?transparent=1&palette=1&scale=2'),
+    body: 'Hello!👋',
    });
    notification.onclick = function() {
     window.open('https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured');
