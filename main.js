@@ -1,23 +1,22 @@
-function showNotification() {
-  const notification = new Notification("TEST", {
-  body: "Hello! welcome to Coding+Gaming this is a test to make our website better",
-});
-}  
+function notifyMe() {
+  if (Notification.permission !== 'granted')
+   Notification.requestPermission();
+  else {
+   var notification = new Notification('Notification title', {
+    icon: 'http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png',
+    body: 'Hey there! You\'ve been notified!',
+   });
+   notification.onclick = function() {
+    window.open('http://stackoverflow.com/a/13328397/1269037');
+   };
+  }
+ }
 
-//default, garanted, denied
-console.log(Notification.permission);
-
-if(Notification.permission === "granted") {
-showNotification();
-} 
-
-else if (Notification.permission === "denied") {
-Notification.requestPermission().then(permission => {
-    if(permission === "granted") {
-      showNotification();
-    }
-})
-}
+notifyMe();
+ 
+if (Notification.permission !== 'granted'){
+   Notification.requestPermission();
+};
 
 /*filterSelection("all")
 function filterSelection(c) {
