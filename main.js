@@ -7,7 +7,7 @@ function notifyMe() {
       dataType: 'jsonp', 
       success: function(headers) {
           language = headers['Accept-Language'];
-          nowDoSomethingWithIt(language);
+          alert(language);
       }
   });
    var notification = new Notification('Notification title', {
