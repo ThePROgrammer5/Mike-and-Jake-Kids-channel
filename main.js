@@ -2,13 +2,24 @@ function notifyMe() {
   if (Notification.permission !== 'granted')
    Notification.requestPermission();
   else {
-   var notification = new Notification('Notification title', {
+    if (window.navigator.language == "en") {
+         var notification = new Notification('Atention!', {
     icon: 'img/favicon.jpg',
     body: 'Hello!👋 Did you know we have a youtube channel? check it out by clicking this notification!',
    });
    notification.onclick = function() {
     window.open('https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured');
    };
+    }
+    else if (window.navigator.language == "hi") {
+      var notification = new Notification('ध्यान!', {
+        icon: 'img/favicon.jpg',
+        body: 'नमस्कार!👋 क्या आप जानते हैं कि हमारा एक यूट्यूब चैनल है? इस अधिसूचना पर क्लिक करके इसे देखें!',
+       });
+       notification.onclick = function() {
+        window.open('https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured');
+       };
+    }
   }
  }
 
