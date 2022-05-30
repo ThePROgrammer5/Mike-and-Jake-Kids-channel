@@ -1,6 +1,7 @@
 function notifyMe() {
-  if (Notification.permission !== 'granted')
-   Notification.requestPermission();
+  if (Notification.permission !== 'granted') {
+    Notification.requestPermission();
+  }
   else {
     var notification = new Notification('Atention! ध्यान!', {
     icon: 'img/favicon.jpg',
