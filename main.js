@@ -1,40 +1,16 @@
-function notifyMe(body, title, recuring) {
-  if (recuring) {
-      if (Notification.permission !== 'granted') {
-        Notification.requestPermission();
-      }
-      else {
-        var notification = new Notification(title, {
-        icon: 'img/favicon.jpg',
-        body: body,
-      });
-      notification.onclick(function() {
-        window.open("https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured");  
-      })
-    }
+function notifyMe(body, title,) {
+  if (Notification.permission !== 'granted') {
+    Notification.requestPermission();
   }
   else {
-    if (doument.cookie == "") {
-      document.cookie == "checkedOut=false"
-    }
-    if (document.cookie == "checkedOut=false") {
-    if (Notification.permission !== 'granted') {
-      Notification.requestPermission();
-    }
-    else {
-        var notification = new Notification(title, {
-        icon: 'img/favicon.jpg',
-        body: body,
-      });
-      notification.onclick(function() {
-        window.open("https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured");  
-        document.cookie = "checkedOut=true;";   
-      })
-    }
-
-    }
-  }
-  
+    var notification = new Notification(title, {
+    icon: 'img/favicon.jpg',
+    body: body,
+   });
+   notification.onclick(function() {
+     window.open("https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured");  
+   })
+ }
 };
 
 notifyMe("Hello!👋 Did you know we have a youtube channel? check it out by clicking this notification! नमस्कार!👋 क्या आप जानते हैं कि हमारा एक यूट्यूब चैनल है? इस अधिसूचना पर क्लिक करके इसे देखें!", "Atention! ध्यान!", false);
