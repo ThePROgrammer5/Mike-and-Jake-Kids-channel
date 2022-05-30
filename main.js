@@ -7,11 +7,11 @@ function notifyMe(body, title, onclick) {
     icon: 'img/favicon.jpg',
     body: body,
    });
-   notification.onclick(onclick())
+   notification.onclick(onclickN())
  }
 };
 
-function onclick() {
+function onclickN() {
   window.open("https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured")
 }
 
