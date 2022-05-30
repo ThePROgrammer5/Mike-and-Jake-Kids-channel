@@ -7,10 +7,15 @@ function notifyMe(body, title, onclick) {
     icon: 'img/favicon.jpg',
     body: body,
    });
-   notification.onclick(onclick)
+   notification.onclick(onclick())
  }
 };
-notifyMe("Hello!👋 Did you know we have a youtube channel? check it out by clicking this notification! नमस्कार!👋 क्या आप जानते हैं कि हमारा एक यूट्यूब चैनल है? इस अधिसूचना पर क्लिक करके इसे देखें!", "Atention! ध्यान!", window.open("https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured"));
+
+function onclick() {
+  window.open("https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured")
+}
+
+notifyMe("Hello!👋 Did you know we have a youtube channel? check it out by clicking this notification! नमस्कार!👋 क्या आप जानते हैं कि हमारा एक यूट्यूब चैनल है? इस अधिसूचना पर क्लिक करके इसे देखें!", "Atention! ध्यान!");
 
 /*filterSelection("all")
 function filterSelection(c) {
