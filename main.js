@@ -2,14 +2,6 @@ function notifyMe() {
   if (Notification.permission !== 'granted')
    Notification.requestPermission();
   else {
-    $.ajax({ 
-      url: "http://ajaxhttpheaders.appspot.com", 
-      dataType: 'jsonp', 
-      success: function(headers) {
-          language = headers['Accept-Language'];
-          alert(language);
-      }
-  });
    var notification = new Notification('Notification title', {
     icon: 'img/favicon.jpg',
     body: 'Hello!👋 Did you know we have a youtube channel? check it out by clicking this notification!',
