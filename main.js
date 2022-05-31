@@ -7,9 +7,9 @@ function notifyMe(body, title, onclick) {
     icon: 'img/favicon.jpg',
     body: body,
    });
-   notification.onclick(function() {
-    window.open("https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured")
-   });
+   notification.onclick = function() {
+   window.open('https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured');
+  };
  }
 };
 
