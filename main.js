@@ -8,7 +8,7 @@ function notifyMe(body, title, onclick) {
     body: body,
    });
    notification.onclick(function() {
-    window.open("https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured")
+    window.open("https://www.youtube.com/c/MIKEANDJAKEKIDSCHANNEL/featured");
    })
  }
 };
